@@ -14,7 +14,7 @@ body {
 .content {
   flex-grow: 1;
   padding: 20px;
-  margin-left: 60px;
+  margin-left: 60px; /* Esta é a linha que move o conteúdo */
   transition: margin-left 0.3s ease;
 }
 
