@@ -1,0 +1,23 @@
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: var(--primary-color);
+}
+
+.profile-card {
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.profile-card h2 {
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+.profile-card p {
+  line-height: 1.6;
+}

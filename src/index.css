@@ -1,0 +1,79 @@
+:root {
+  /* Tema Escuro */
+  --primary-color: #f0f0f0; 
+  --secondary-color: #333333; 
+  --accent-color: #1abc9c; 
+  --bg-light: #2c3e50; 
+  --bg-dark: #232d3b; 
+  --text-dark: #f0f0f0; 
+  --text-light: #333333; 
+
+  /* Cores das texturas para profundidade */
+  --texture-color-1: #4a5d71; 
+  --texture-color-2: #3a4b60;
+  --texture-color-3: #283542;
+}
+
+/* Tema Claro */
+.light {
+  --primary-color: #2c3e50;
+  --secondary-color: #ecf0f1;
+  --accent-color: #1abc9c;
+  --bg-light: #f4f6f8;
+  --bg-dark: #ffffff;
+  --text-dark: #333333;
+  --text-light: #ffffff;
+
+  /* Cores das texturas para profundidade no tema claro */
+  --texture-color-1: #cdd4da;
+  --texture-color-2: #e0e5e9;
+  --texture-color-3: #f1f3f5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-dark);
+  
+  background-color: var(--bg-dark);
+  background-image: 
+    radial-gradient(var(--texture-color-1) 3px, transparent 3px),
+    radial-gradient(var(--texture-color-2) 3px, transparent 3px),
+    radial-gradient(var(--texture-color-3) 3px, transparent 3px);
+  background-size: 40px 40px, 60px 60px, 80px 80px;
+  background-position: 0 0, 10px 10px, 20px 20px;
+  
+  animation: 
+    moveBackground 150s linear infinite,
+    moveBackground2 300s linear infinite,
+    moveBackground3 600s linear infinite;
+}
+
+@keyframes moveBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 1000px;
+  }
+}
+
+@keyframes moveBackground2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 500px;
+  }
+}
+
+@keyframes moveBackground3 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 250px 250px;
+  }
+}

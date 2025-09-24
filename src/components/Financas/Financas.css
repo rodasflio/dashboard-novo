@@ -1,0 +1,121 @@
+.financas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: var(--primary-color);
+}
+
+.summary-section,
+.details-section {
+  margin-bottom: 40px;
+}
+
+.summary-section h2,
+.details-section h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.summary-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  background-color: rgba(44, 62, 80, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 200px;
+  transition: transform 0.3s ease;
+  color: var(--primary-color);
+}
+
+.card-item:hover {
+  transform: translateY(-5px);
+}
+
+.card-total,
+.card-received,
+.card-remaining {
+  background-color: rgba(44, 62, 80, 0.7);
+}
+
+.card-total {
+  border: 2px solid #f1c40f;
+}
+
+.card-received {
+  border: 2px solid #27ae60;
+}
+
+.card-remaining {
+  border: 2px solid #e74c3c;
+}
+
+.card-item h3 {
+  margin: 0 0 10px;
+  color: inherit;
+  font-size: 1.2em;
+}
+
+.card-value {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: inherit;
+}
+
+.finances-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(44, 62, 80, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--primary-color);
+}
+
+.finances-table th,
+.finances-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.finances-table thead th {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.finances-table tbody tr:nth-child(even) {
+  background-color: var(--bg-dark);
+}
+
+.finances-table tbody tr:hover {
+  background-color: var(--secondary-color);
+}
+
+.status-badge {
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+}
+
+.status-em-andamento {
+  background-color: var(--accent-color);
+}
+
+.status-concluido {
+  background-color: #27ae60;
+}

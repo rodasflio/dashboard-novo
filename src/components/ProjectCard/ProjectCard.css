@@ -1,0 +1,57 @@
+.project-card {
+  background-color: rgba(44, 62, 80, 0.7);
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex: 0 0 200px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.project-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.contractor-name {
+  margin: 0;
+  font-size: 1.1em;
+  color: var(--primary-color);
+}
+
+.status-badge {
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: 0.7em;
+  font-weight: bold;
+  color: var(--bg-light);
+}
+
+.status-em-andamento {
+  background-color: var(--accent-color);
+}
+
+.status-concluido {
+  background-color: #27ae60;
+}
+
+.card-body {
+  font-size: 0.8em;
+  color: var(--primary-color);
+}
+
+.description {
+  margin-top: 10px;
+  border-top: 1px solid var(--secondary-color);
+  padding-top: 5px;
+}

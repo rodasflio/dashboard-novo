@@ -1,0 +1,287 @@
+.project-details-container {
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+  color: var(--primary-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.top-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: var(--bg-dark);
+}
+
+.edit-button {
+  background-color: var(--accent-color);
+  color: var(--bg-light);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #16a085;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.project-details-card {
+  background-color: rgba(44, 62, 80, 0.7);
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.project-details-card h2 {
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 10px;
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.project-details-card p {
+  line-height: 1.6;
+  color: var(--primary-color);
+}
+
+.project-description {
+  background-color: var(--bg-dark);
+  border-left: 3px solid var(--accent-color);
+  padding: 15px;
+  margin-top: 20px;
+  color: var(--primary-color);
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: white;
+}
+
+.status-em-andamento {
+  background-color: var(--accent-color);
+}
+
+.status-concluido {
+  background-color: #27ae60;
+}
+
+.task-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--secondary-color);
+}
+
+.task-section h3 {
+  color: var(--primary-color);
+}
+
+.task-input-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.task-input-group input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: var(--bg-dark);
+  color: var(--primary-color);
+}
+
+.task-input-group button {
+  padding: 8px 15px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--bg-light);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-input-group button:hover {
+  background-color: #16a085;
+}
+
+.tasks-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--secondary-color);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  flex-direction: column;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.task-item span {
+  cursor: pointer;
+  flex-grow: 1;
+  color: var(--primary-color);
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.subtasks-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  width: 100%;
+}
+
+.task-item:hover .subtasks-container {
+  max-height: 500px;
+}
+
+.subtasks-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.subtask-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.subtask-item input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.subtask-item span {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.subtask-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.subtask-input-group {
+  display: flex;
+  margin-top: 10px;
+}
+
+.subtask-input-group input {
+  flex-grow: 1;
+  padding: 6px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  font-size: 0.9em;
+  margin-right: 10px;
+  background-color: var(--bg-dark);
+  color: var(--primary-color);
+}
+
+.subtask-input-group button {
+  padding: 6px 12px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--bg-light);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subtask-input-group button:hover {
+  background-color: #16a085;
+}
+
+.project-actions {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--secondary-color);
+  text-align: center;
+}
+
+.concluir-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.concluir-button:hover {
+  background-color: #219d54;
+}
+
+.reabrir-button {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.reabrir-button:hover {
+  background-color: #e67e22;
+}
