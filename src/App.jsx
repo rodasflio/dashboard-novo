@@ -51,7 +51,7 @@ const App = () => {
     };
 
     fetchProfile();
-  }, [session, profileUpdateCounter]); // profileUpdateCounter ADICIONADO AQUI
+  }, [session, profileUpdateCounter]);
 
   const handleProfileCreated = () => {
     setHasProfile(true);
