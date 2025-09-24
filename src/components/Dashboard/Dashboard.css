@@ -1,0 +1,88 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.summary-section {
+  margin-bottom: 20px;
+}
+
+.summary-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  background-color: rgba(44, 62, 80, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: var(--primary-color);
+}
+
+.card-item:hover {
+  transform: translateY(-5px);
+}
+
+.card-item h3 {
+  margin: 0 0 10px;
+  color: var(--primary-color);
+  font-size: 1.2em;
+}
+
+.card-value {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.count-label {
+  font-size: 1em;
+  color: var(--primary-color);
+  margin: 10px 0 0;
+}
+
+.upcoming-projects-section {
+  margin-top: 40px;
+}
+
+.upcoming-projects-section h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.upcoming-list {
+  list-style: none;
+  padding: 0;
+}
+
+.upcoming-item {
+  background-color: var(--bg-light);
+  border-left: 5px solid var(--accent-color);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upcoming-item p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.upcoming-item .due-date {
+  font-weight: bold;
+  color: #e74c3c;
+}

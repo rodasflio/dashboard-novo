@@ -1,0 +1,40 @@
+.funcionarios-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.add-employee-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--bg-light);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.add-employee-button:hover {
+  background-color: #16a085;
+}
+
+.employees-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.employee-card {
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 250px;
+  color: var(--primary-color);
+}
+
+.employee-card h3 {
+  color: var(--accent-color);
+  margin-top: 0;
+}

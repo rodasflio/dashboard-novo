@@ -1,0 +1,22 @@
+.value-progress-section {
+  margin-top: 15px;
+}
+
+.value-progress-section p {
+  margin: 0 0 5px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.value-progress-bar-container {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.value-progress-bar-fill {
+  height: 100%;
+  background-color: #2ecc71;
+  transition: width 0.3s ease-in-out;
+}

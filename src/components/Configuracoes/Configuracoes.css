@@ -1,0 +1,40 @@
+.configuracoes-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.settings-card {
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.settings-card h3 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+.settings-card p {
+  color: var(--primary-color);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.clear-data-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.clear-data-button:hover {
+  background-color: #c0392b;
+}
